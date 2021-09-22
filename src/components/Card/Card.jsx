@@ -4,12 +4,12 @@ import React, { Component } from "react";
 class Card extends Component {
   
   render() {
-    const {title, category} = this.props.info
+    const {title} = this.props.info //añadir category
 
     return (
       <section>
         <p>{title}</p> 
-        <p>{category}</p> 
+        {/* <p>{category}</p>  */}
         <button onClick={this.props.remove}>Borrar</button>
         
         

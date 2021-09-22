@@ -4,7 +4,7 @@ import List from '../List/List';
 class Main extends Component {
   render() {
     return (
-      <main>
+      <main className="main">
         <List/>
       </main>
     )

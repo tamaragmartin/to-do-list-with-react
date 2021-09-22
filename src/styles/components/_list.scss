@@ -1,0 +1,68 @@
+.finalButtons {
+    padding: 30px;
+
+    
+    & > Button {
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 15px;
+        letter-spacing: 4px;
+        background-color: $button-color;
+        border: none;
+        color: #fff;
+        width: 120px;
+        height: 40px;
+        transition-duration: 0.4s;
+        box-shadow: 0 5px 5px #3f3437;
+        border-radius: 4px;
+        margin-left: 10px;
+
+        // &:hover {
+        //  background: #fff;
+        //  box-shadow: 0px 2px 10px 5px #3f3437;
+        //  color: #3f3437;
+  }
+
+}
+
+.form {
+    padding: 30px;
+
+    & > input {
+        margin: 10px;
+    }
+}
+   
+.newTask {
+    width: 15%;
+    margin-bottom: 25px;
+    padding: 0px 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid $button-color;
+    outline: none;
+    background-color: transparent;
+    color: $button-color;
+    text-align: center;
+    
+
+}
+
+.addButton {
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background-color: $button-color;
+        border: none;
+        color: #fff;
+        width: 60px;
+        height: 30px;
+        transition-duration: 0.4s;
+        box-shadow: 0 5px 5px #3f3437;
+        border-radius: 4px;
+        margin-left: 10px;
+}
+

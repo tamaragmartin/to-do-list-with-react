@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Card from '../Card'
 import cards from '../../data.json'
 
-
 class List extends Component {
 
 constructor(props) {
@@ -17,9 +16,9 @@ constructor(props) {
 addTask = (e) => {
   e.preventDefault();
   const title = e.target.title.value;
-  const category = e.target.category.value;
+  // const category = e.target.category.value;
 
-  let newTask = {title, category};
+  let newTask = {title}; //añadir category
   this.setState({ cards: [...this.state.cards, newTask] });
 }
 
@@ -45,25 +44,29 @@ paintTask = () => {
   render() {
     return (
     <>
-      <form onSubmit={this.addTask}>
+               
+      <form onSubmit={this.addTask} className="form"> 
         <label>
-        <input type="text" name="title" placeholder="Añade una tarea"/>
-        </label>
-        <label>
-        <input type="text" name="category" placeholder="Añade una categoria"/>
-        </label>
-        <input type="submit" value="Add"/>
-      </form>
-      <section>
+        <input type="text" name="title" placeholder="Añade una tarea nueva" className="newTask"/>
+        </label> 
+        {/* <label>
+        <input type="text" name="category" placeholder="Añade una categoria" />
+        </label>  */}
+        <input type="submit" value="Add" className="addButton"/>
+      </form>  
+      
+      <section> 
         <article>
            <h4>Tareas pendientes:</h4> 
            {this.paintTask()} 
         </article>
       </section>
-      <section>
+      
+      <section className="finalButtons">
         <button onClick={this.resetTasks}>Reset</button>
-        <button onClick={this.removeAll}>Clear</button>
+        <button onClick={this.removeAll}>Clear</button> 
       </section> 
+      
     </>
     )
   }
