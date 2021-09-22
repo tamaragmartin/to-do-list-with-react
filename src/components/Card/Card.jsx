@@ -8,8 +8,8 @@ class Card extends Component {
 
     return (
       <section>
-        <p>{category}</p> 
         <p>{title}</p> 
+        <p>{category}</p> 
         <button onClick={this.props.remove}>Borrar</button>
         
         
